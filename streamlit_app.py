@@ -2,6 +2,8 @@ import pandas as pd
 import numpy as np
 
 
-pd.read_excel(NBAtool.xlsx, sheet_name='Consolidated')
+df = pd.read_excel(
+	io='C:/Users/matthf8/OneDrive - kochind.com/Desktop/NBAtool.xlsx',
+	sheet_name='Consolidated')
 
-st.dataframe(data=pd.read_excel)
+st.dataframe(data=df)
