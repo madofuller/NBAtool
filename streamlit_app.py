@@ -6,7 +6,7 @@ st.title('NBA Tool')
 
 
 df = pd.read_excel(
-	io='C:/Users/matthf8/OneDrive - kochind.com/Desktop/NBAtool.xlsx',
+	io='NBAtool.xlsx',
 	sheet_name='Consolidated')
 
 st.dataframe(data=df)
