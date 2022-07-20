@@ -19,8 +19,6 @@ with st.sidebar:
 		('North America', 'China', 'Rest of Asia'))
 	choose_date = st.date_input(
     	"Choose Date")
-	choose_customer
-
 df = pd.read_excel('NBA_Tool.xlsx', sheet_name='Consolidated')
 
 st.dataframe(data=df)
