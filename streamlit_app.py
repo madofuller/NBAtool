@@ -18,8 +18,7 @@ with st.sidebar:
 		'Choose Contract',
 		('North America', 'China', 'Rest of Asia'))
 	choose_date = st.date_input(
-    	"Choose Date",
-    	datetime.date(2022, 7, 1))
+    	"Choose Date")
 	choose_customer
 
 df = pd.read_excel('NBA_Tool.xlsx', sheet_name='Consolidated')
