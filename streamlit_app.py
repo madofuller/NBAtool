@@ -10,7 +10,7 @@ product = df['Product'].drop_duplicates()
 
 site = df['Location'].drop_duplicates()
 
-contract = df['Contract_index'].drop_duplicates()
+contract = df['Contract_Index'].drop_duplicates()
 
 
 with st.sidebar:
