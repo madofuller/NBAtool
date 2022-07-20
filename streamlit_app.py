@@ -16,8 +16,7 @@ product = df['Product'].drop_duplicates()
 
 with st.sidebar:
 	product_choice = st.selectbox(
-		'Choose Product',
-		('AA', 'HMD', 'ADN', 'Polymer'))
+		'Choose Product', product)
 	site_choice = st.selectbox(
 		'Choose Site Location',
 		('North America', 'China', 'Rest of Asia'))
