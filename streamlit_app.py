@@ -4,22 +4,32 @@ import numpy as np
 
 st.title('NBA Tool')
 
+df = pd.read_excel('NBA_Tool.xlsx', sheet_name='Consolidated')
+
+product = df['Product'].drop_duplicates()
+
+
+
+
+
+
+
 with st.sidebar:
-	product = st.selectbox(
+	product_choice = st.selectbox(
 		'Choose Product',
 		('AA', 'HMD', 'ADN', 'Polymer'))
-	site = st.selectbox(
+	site_choice = st.selectbox(
 		'Choose Site Location',
 		('North America', 'China', 'Rest of Asia'))
-	customer = st.selectbox(
+	customer_choice = st.selectbox(
 		'Choose Customer',
 		('North America', 'China', 'Rest of Asia'))
-	contract = st.selectbox(
+	contract_choice = st.selectbox(
 		'Choose Contract',
 		('North America', 'China', 'Rest of Asia'))
-	choose_date = st.date_input(
+	date_choice = st.date_input(
     	"Choose Date")
-df = pd.read_excel('NBA_Tool.xlsx', sheet_name='Consolidated')
+
 
 st.dataframe(data=df)
 
