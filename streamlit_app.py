@@ -16,6 +16,8 @@ contract = df['Contract_Index'].drop_duplicates()
 with st.sidebar:
 	product_choice = st.selectbox(
 		'Choose Product', product)
+	if 'AA' in product_choice:
+		st.write('AA selected')
 	site_choice = st.selectbox(
 		'Choose Site Location', site)
 	contract_choice = st.selectbox(
