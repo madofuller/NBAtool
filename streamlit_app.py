@@ -26,7 +26,7 @@ with st.sidebar:
 	vc_choice = st.selectbox(
 	'Choose Shipping Location', vc)
 	date_choice = st.date_input(
-    "Choose Date", min_value=1/1/2020, max_value=12/31/2025)
+    "Choose Date", min_value=1/1/2020/0:0:0, max_value=12/31/2025/0:0:0)
 
 st.write(product_choice, site_choice, contract_choice, date_choice)
 
