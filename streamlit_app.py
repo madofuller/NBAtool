@@ -12,9 +12,9 @@ product = df['Product'].drop_duplicates()
 
 site = df['Location'].drop_duplicates()
 
-vc = df['Variable Costs'].drop_duplicates()
+vc = df['Variable Costs'].drop_na()
 
-contract = df['Contract_Index'].dropna()
+contract = df['Contract_Index'].drop_na()
 
 with st.sidebar:
 	product_choice = st.selectbox(
