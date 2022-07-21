@@ -23,6 +23,8 @@ with st.sidebar:
 	'Choose Site Location', site)
 	contract_choice = st.selectbox(
 	'Choose Contract', contract)
+	vc_choice = st.selectbox(
+	'Choose Shipping Location', vc)
 	date_choice = st.date_input(
     "Choose Date")
 
