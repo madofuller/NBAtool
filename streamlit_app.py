@@ -16,13 +16,13 @@ contract = df['Contract_Index'].drop_duplicates()
 
 with st.sidebar:
 	product_choice = st.selectbox(
-		'Choose Product', options=['select']+list(df.keys())
+	'Choose Product', options=['select']+list(df.keys())
 	site_choice = st.selectbox(
-		'Choose Site Location', options=df[product_choice])
+	'Choose Site Location', options=df[product_choice])
 	contract_choice = st.selectbox(
-		'Choose Contract', contract)
+	'Choose Contract', contract)
 	date_choice = st.date_input(
-    	"Choose Date")
+    "Choose Date")
 
 st.write(product_choice, site_choice, contract_choice, date_choice)
 
