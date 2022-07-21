@@ -8,6 +8,10 @@ df = pd.read_excel('NBA_Tool.xlsx',
 
 	sheet_name='Consolidated')
 
+
+min_date = datetime.datetime(2020,1,1)
+max_date = datetime.date(2023,12,31)
+
 product = df['Product'].drop_duplicates()
 
 site = df['Location'].drop_duplicates()
@@ -26,7 +30,7 @@ with st.sidebar:
 	vc_choice = st.selectbox(
 	'Choose Shipping Location', vc)
 	date_choice = st.date_input(
-    "Choose Date", min_value=1/1/2020/0:0:0, max_value=12/31/2025/0:0:0)
+    "Choose Date", min_value=min_date, max_value=max_date)
 
 st.write(product_choice, site_choice, contract_choice, date_choice)
 
