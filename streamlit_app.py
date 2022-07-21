@@ -9,7 +9,7 @@ df = pd.read_excel('NBA_Tool.xlsx',
 	sheet_name='Consolidated')
 
 
-min_date = datetime.datetime(2020,1,1)
+min_date = datetime.date(2020,1,1)
 max_date = datetime.date(2023,12,31)
 
 product = df['Product'].drop_duplicates()
