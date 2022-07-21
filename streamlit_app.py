@@ -8,11 +8,11 @@ df = pd.read_excel('NBA_Tool.xlsx',
 
 	sheet_name='Consolidated')
 
-product = df['Product'].drop_duplicates(), df['Product'].dropna()
+product = df['Product'].drop_duplicates()
 
-site = df['Location'].drop_duplicates(), df['Location'].dropna()
+site = df['Location'].drop_duplicates()
 
-contract = df['Contract_Index'].drop_duplicates(), df['Contract_Index'].dropna()
+contract = df['Contract_Index'].drop_duplicates()
 
 with st.sidebar:
 	product_choice = st.selectbox(
