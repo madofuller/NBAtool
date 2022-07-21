@@ -25,5 +25,5 @@ with st.sidebar:
 	date_choice = st.date_input(
     	"Choose Date")
 
-st.write(product_choice)
+st.write(product_choice, site_choice, contract_choice, date_choice)
 
